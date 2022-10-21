@@ -135,6 +135,7 @@ resource "aws_instance" "web" {
           #Owner = "Naresh"
  	#CostCenter = "India"
      }
+}
   }
 
 
