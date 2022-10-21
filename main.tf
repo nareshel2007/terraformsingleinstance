@@ -121,10 +121,10 @@ resource "aws_security_group" "allow_all" {
   # vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]
  #  associate_public_ip_address = true	
    # tags = {
-         Name = "Naresh-1"
-         Env = "dev"
-          Owner = "Naresh"
- 	CostCenter = "India"
+         #Name = "Naresh-1"
+         #Env = "dev"
+          #Owner = "Naresh"
+ 	#CostCenter = "India"
      }
   }
 
