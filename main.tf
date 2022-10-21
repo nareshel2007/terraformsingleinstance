@@ -15,8 +15,6 @@ terraform {
   }
 }
 
-
-
 resource "aws_vpc" "default" {
     cidr_block = "${var.vpc_cidr}"
     enable_dns_hostnames = true
@@ -119,7 +117,7 @@ resource "aws_security_group" "allow_all" {
 # }
 
 
-     resource "aws_instance" "Naresh-1" {
+  resource "aws_instance" "Naresh-1" {
        # ami = "ami-0b00d49148fb2a641"
       #ami = "ami-0d857ff0f5fc4e03b"
       ami = "${data.aws_ami.my_ami.id}"
@@ -137,7 +135,7 @@ resource "aws_security_group" "allow_all" {
  	 
      }
 }
-  }
+  
 
 
 ##output "ami_id" {
