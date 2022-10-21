@@ -15,12 +15,7 @@ terraform {
   }
 }
 
-resource "aws_instance" "web" {
-  ami           = "ami-0b00d49148fb2a641"
-  instance_type = "t2.micro"
-  tags = {
-    Name = "Naresh"
-  }
+
 
 resource "aws_vpc" "default" {
     cidr_block = "${var.vpc_cidr}"
@@ -108,6 +103,13 @@ resource "aws_security_group" "allow_all" {
     cidr_blocks     = ["0.0.0.0/0"]
     }
 }
+
+resource "aws_instance" "web" {
+  ami           = "ami-0b00d49148fb2a641"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Naresh"
+  }
 
 # data "aws_ami" "my_ami" {
 #      most_recent      = true
