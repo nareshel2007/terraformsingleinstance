@@ -110,6 +110,7 @@ resource "aws_instance" "web" {
   tags = {
     Name = "Naresh"
   }
+}
 
 # data "aws_ami" "my_ami" {
 #      most_recent      = true
