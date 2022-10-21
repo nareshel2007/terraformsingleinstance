@@ -106,7 +106,7 @@ data "aws_ami" "my_ami" {
 most_recent      = true
 #      #name_regex       = "^mavrick"
 #      owners           = ["721834156908"]
-# }
+ }
 
 
 resource "aws_instance" "web-1" {
