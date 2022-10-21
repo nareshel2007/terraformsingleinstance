@@ -136,8 +136,6 @@ resource "aws_security_group" "allow_all" {
   }
 
 
-}
-
 ##output "ami_id" {
 #  value = "${data.aws_ami.my_ami.id}"
 #}
