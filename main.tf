@@ -104,13 +104,13 @@ resource "aws_security_group" "allow_all" {
     }
 }
 
-resource "aws_instance" "web" {
-  ami           = "ami-0b00d49148fb2a641"
-  instance_type = "t2.micro"
-  tags = {
-    Name = "Naresh"
-  }
-}
+#resource "aws_instance" "web" {
+  #ami           = "ami-0b00d49148fb2a641"
+  #instance_type = "t2.micro"
+  #tags = {
+    #Name = "Naresh"
+  #}
+#}
 
 # data "aws_ami" "my_ami" {
 #      most_recent      = true
