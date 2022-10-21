@@ -136,6 +136,7 @@ resource "aws_instance" "web" {
  	#CostCenter = "India"
      }
 }
+}
   }
 
 
